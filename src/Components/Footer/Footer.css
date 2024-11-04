@@ -1,0 +1,37 @@
+.footer {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #797979;
+    padding: 15px 0;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    text-align: center; /* Centers text on narrow screens */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer ul {
+    padding: 0;
+    display: flex;
+}
+
+.footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Adds space between elements */
+    }
+    .footer ul {
+        justify-content: center; /* Center align list */
+        margin-top: 10px; /* Adds space between text and links */
+    }
+}
